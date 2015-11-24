@@ -3904,8 +3904,8 @@ ko.bindingHandlers['foreach'] = {
                 'includeDestroyed': unwrappedValue['includeDestroyed'],
                 'afterAdd': unwrappedValue['afterAdd'],
                 'beforeRemove': unwrappedValue['beforeRemove'],
-                'before': unwrappedValue['beforeRenderAll'],
-                'after': unwrappedValue['afterRender'],
+                'before': unwrappedValue['before'],
+                'after': unwrappedValue['after'],
                 'afterRenderAll':unwrappedValue['afterRenderAll'],
                 'beforeMove': unwrappedValue['beforeMove'],
                 'afterMove': unwrappedValue['afterMove'],
@@ -5279,6 +5279,7 @@ ko.exportSymbol('utils.compareArrays', ko.utils.compareArrays);
         function callGlobalCallback(callback) {
             console.log(isFirstExecution);
             console.log(editScript.length);
+            console.log(callback);
             if (callback && editScript.length > 0)
                 callback();
         }
