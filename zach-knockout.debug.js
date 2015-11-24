@@ -4229,6 +4229,8 @@ ko.bindingHandlers['foreach'] = {
                 'as': unwrappedValue['as'],
                 'includeDestroyed': unwrappedValue['includeDestroyed'],
                 'afterAdd': unwrappedValue['afterAdd'],
+                'afterRenderAll': unwrappedValue['afterRenderAll'],
+                'beforeRenderAll': unwrappedBalue['beforeRenderAll'],
                 'beforeRemove': unwrappedValue['beforeRemove'],
                 'afterRender': unwrappedValue['afterRender'],
                 'beforeMove': unwrappedValue['beforeMove'],
