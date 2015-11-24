@@ -5277,6 +5277,8 @@ ko.exportSymbol('utils.compareArrays', ko.utils.compareArrays);
         
         
         function callGlobalCallback(callback) {
+            console.log(isFirstExecution);
+            console.log(editScript.length);
             if (callback && !isFirstExecution && editScript.length > 0)
                 callback();
         }
