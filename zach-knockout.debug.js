@@ -5760,9 +5760,9 @@ ko.exportSymbol('utils.compareArrays', ko.utils.compareArrays);
         callCallback(options['afterMove'], itemsForMoveCallbacks);
         callCallback(options['afterAdd'], itemsForAfterAddCallbacks);
         
-        if(options['afterRenderAll']){
+        if(options['afterRenderAll'])
             options['afterRenderAll']();   
-        }
+        
     }
 })();
 
