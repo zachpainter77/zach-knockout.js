@@ -5763,7 +5763,6 @@ ko.exportSymbol('utils.compareArrays', ko.utils.compareArrays);
         if(options['afterRenderAll']){
             options['afterRenderAll']();   
         }
-        }
     }
 })();
 
